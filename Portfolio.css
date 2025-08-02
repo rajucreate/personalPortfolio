@@ -1,0 +1,249 @@
+body{
+    padding:0;
+    margin:0;
+}
+
+.header{
+    display:flex;
+    margin:0;
+}
+
+.navbar{
+    background: brown;
+    color:white;
+    font-family:"Georgia";
+    width:200px;
+    margin:0;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nav-list{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.list-nav-items{
+    list-style: none;
+    margin-bottom:30px;
+    margin-right:20px;
+    font-size:25px;
+    cursor:pointer;
+    transition:all 0.3s ease;
+}
+
+.list-nav-items:hover{
+    font-size:30px;
+    text-decoration:underline;
+    transform: scale(1.1);
+    color:grey;
+}
+
+.profile-image{
+    width:50%;
+    border-radius:300px;
+    margin:50px;
+}
+
+#sectionHome{
+    margin-left:300px;
+}
+
+.welcome-heading{
+    font-size:40px;
+    font-family:"Arial", sans-serif;
+    text-decoration:underline;
+    color:darkblue;
+}
+
+p{
+    font-size:20px;
+    font-family:"Roboto"
+}
+
+.nav-list-mobile{
+    display:none;
+}
+
+#sectionAbout{
+    margin-left:300px;
+}
+
+.about-me-heading{
+    font-family:"Arial", sans-serif;
+    font-size:40px;
+    text-decoration:underline;
+
+}
+
+.about-highlights-item{
+    font-family:"Roboto";
+    font-size:20px;
+    list-style:circle;
+}
+
+
+#sectionSkills{
+    margin-left:300px;
+}
+
+.skills-heading{
+    font-family:"Arial", sans-serif;
+    font-size:40px;
+    text-decoration:underline;
+}
+
+.skills-list-item{
+    font-family:"Roboto";
+    font-size:20px;
+    list-style:circle;
+}
+
+#sectionProjects{
+    margin-left:300px;
+}
+
+.project-heading{
+    font-family:"Arial", sans-serif;
+    font-size:30px;
+    text-decoration:underline;
+}
+
+#sectionEducation{
+    margin-left:300px;
+}
+
+.education-heading{
+    font-family:"Arial", sans-serif;
+    font-size:30px;
+    text-decoration:underline;
+}
+
+.nav-list-mobile {
+  display: none;
+  position: fixed;
+  top: 60px; /* or whatever height your navbar/menu button is */
+  left: 0;
+  width: 100%;
+  background-color: brown;
+  z-index: 998;
+}
+
+#sectionContact{
+    margin-left:300px;
+}
+
+.contact-heading{
+    font-family:"Arial", sans-serif;
+    font-size:30px;
+    text-decoration:underline;
+}
+
+.contact-item{
+    font-size:20px;
+}
+
+.menu{
+    display:none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@media (max-width:768px){
+    .navbar{
+        width:100%;
+        height:auto;
+        position:fixed;
+        top:0;
+        left:0;
+        z-index:999;  
+        flex-direction:row;
+        align-items:center;
+        justify-content:space-between;
+        position: fixed;
+    }
+    .nav-list{
+        /* flex-direction:row;
+        justify-content:center;
+        align-items:center; */
+        display:none;
+    }
+    #sectionHome{
+        margin-top:230px;
+    }
+
+    .menu{
+        display:block;
+        font-size:30px;
+        cursor:pointer;
+        margin-left:20px;
+    }
+
+    #sectionProjects{
+        margin-left:10px;
+    }
+
+    #sectionContact{
+        margin-left:10px;
+    }
+
+    #sectionEducation{
+        margin-left:10px;
+    }
+
+    #sectionSkills{
+        margin-left:10px;
+    }
+
+    #sectionAbout{
+        margin-left:10px;
+    }
+
+    #sectionHome{
+        margin-left:10px;
+    }
+
+    /* .nav-list.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    } */
+
+    .profile-image{
+        width:100px;
+        border-radius:300px;
+        margin:50px;
+    }
+
+    .nav-list-mobile.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top:135px;
+        color:white;
+        font-family:"Roboto";
+    }
+
+    .nav-list-mobile{
+        display:none;
+    }
+
+    #sectionHome.active{
+        margin-top:2px;
+    }
+
+    section {
+        scroll-margin-top: 100px; 
+    }
+    
+}
